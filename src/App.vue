@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <h1 class="text-3xl font-bold underline">My App</h1>
+    <RouterView />
   </div>
   <HelloWorld msg="Vite + Vue" />
 </template>
