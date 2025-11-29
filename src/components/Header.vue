@@ -6,7 +6,10 @@ import { useRouter } from "vue-router";
 const userStore = useUserStore();
 const router = useRouter();
 
-const logout = () => {};
+const logout = () => {
+  userStore.logout;
+  router.push("/");
+};
 </script>
 
 <template>
