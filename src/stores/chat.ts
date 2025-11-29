@@ -21,11 +21,12 @@ export const useChatStore = defineStore("chat", () => {
 
   //Load previous chat history
   const loadChatHistory = async () => {
+    console.log("Loading chat history...");
     if (!userStore.userId) return;
 
     try {
       const { data } = await axios.post(
-        import.meta.env.VITE_API_URL + "/get-messages",
+        `${import.meta.env.VITE_API_URL}/get-messages`,
         {
           userId: userStore.userId,
         }
