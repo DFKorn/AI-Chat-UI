@@ -41,4 +41,6 @@ export const useChatStore = defineStore("chat", () => {
       console.error("Failed to load chat history:", e);
     }
   };
+
+  return { messages, isLoading, loadChatHistory };
 });
