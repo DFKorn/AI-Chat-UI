@@ -15,7 +15,7 @@ const sendMessage = () => {
   <div class="p-4 bg-gray-800 flex">
     <input
       v-model="message"
-      @keyup.enteter="sendMessage"
+      @keyup.enter="sendMessage"
       placeholder="Send a message"
       type="text"
       class="flex-1 p-2 rounded-lg bg-gray-700 text-white focus:outline-none"
