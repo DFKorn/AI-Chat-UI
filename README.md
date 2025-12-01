@@ -9,6 +9,6 @@ This is the frontend for the Chat AI application. It is a Vue.js 3 application t
  - TypeScript
  - Google Gemini (Gemini 2.5 Flash) - used for the AI chatbot
 
-### Live - [Chat AI](https://ai-chat-ui-opal.vercel.app) 
+## Live - [Chat AI](https://ai-chat-ui-opal.vercel.app) 
 
 The Express backend API for this application can be found [here](https://github.com/DFKorn/AI-Chat-API).
