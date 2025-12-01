@@ -1,5 +1,12 @@
-# Vue 3 + TypeScript + Vite
+# Chat AI UI
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This is the frontend for the Chat AI application. It is a Vue.js 3 application that uses a custom API to interact with Stream Chat, Neon PostgreSQL database and Google Gemini.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+
+## Technical Stack
+ - Vue.js 3
+ - Tailwind CSS 
+ - TypeScript
+ - Google Gemini (Gemini 2.5 Flash) - used for the AI chatbot
+
+The Express backend API for this application can be found [here](https://github.com/DFKorn/AI-Chat-API).
