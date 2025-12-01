@@ -5,9 +5,10 @@ This is the frontend for the Chat AI application. It is a Vue.js 3 application t
 
 ## Technical Stack
  - Vue.js 3
+ - Pinia 
  - Tailwind CSS 
  - TypeScript
- - Google Gemini (Gemini 2.5 Flash) - used for the AI chatbot
+ - Google Gemini (Gemini 2.5 Flash)
 
 ## Live - [Chat AI](https://ai-chat-ui-opal.vercel.app) 
 
