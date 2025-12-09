@@ -62,7 +62,7 @@ onMounted(() => {
       >
         <div
           v-html="formatAIMessage(msg.content)"
-          class="max-w-xs px-4 py-2 rounded-lg md:max-w-md"
+          class="max-w-xs px-4 py-2 rounded-lg md:max-w-5xl"
           :class="
             msg.role === 'user'
               ? 'bg-blue-600 text-white'
