@@ -53,12 +53,14 @@ const createUser = async () => {
         Welcome to the Chat AI
       </h1>
       <input
+        id="name"
         type="text"
         class="w-full p-2 mb-2 bg-gray-700 text-white rounded-lg focus:outline-none"
         placeholder="Name"
         v-model="name"
       />
       <input
+        id="email"
         type="email"
         class="w-full p-2 mb-2 bg-gray-700 text-white rounded-lg focus:outline-none"
         placeholder="Email"
