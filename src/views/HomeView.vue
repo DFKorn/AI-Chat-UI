@@ -59,28 +59,27 @@ const createUser = async () => {
       <h1 class="text-2xl font-semibold mb-4 text-center">
         Welcome to the Chat AI
       </h1>
-      <input
-        id="name"
-        type="text"
-        class="w-full p-2 mb-2 bg-gray-700 text-white rounded-lg focus:outline-none"
-        placeholder="Name"
-        v-model="name"
-      />
-      <input
-        id="email"
-        type="email"
-        class="w-full p-2 mb-2 bg-gray-700 text-white rounded-lg focus:outline-none"
-        placeholder="Email"
-        v-model="email"
-      />
-      <button
-        @click="createUser"
-        class="w-full p-2 bg-blue-500 rounded-lg"
-        :disabled="loading"
-      >
-        {{ loading ? "Loading..." : "Start Chat" }}
-      </button>
-      <p v-if="error" class="text-red-400 text-center mt-2">{{ error }}</p>
+      <form @submit.prevent="createUser">
+        <input
+          v-model="name"
+          class="w-full p-2 mb-2 bg-gray-700 text-white rounded-lg focus:outline-none"
+          placeholder="Name"
+        />
+        <input
+          id="email"
+          class="w-full p-2 mb-2 bg-gray-700 text-white rounded-lg focus:outline-none"
+          placeholder="Email"
+          v-model="email"
+        />
+        <button
+          type="submit"
+          class="w-full p-2 bg-blue-500 rounded-lg"
+          :disabled="loading"
+        >
+          {{ loading ? "Loading..." : "Start Chat" }}
+        </button>
+        <p v-if="error" class="text-red-400 text-center mt-2">{{ error }}</p>
+      </form>
     </div>
   </div>
 </template>
