@@ -13,9 +13,16 @@ const email = ref("");
 const loading = ref(false);
 const error = ref("");
 
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 const createUser = async () => {
   if (!name.value || !email.value) {
     error.value = "Name and email are required.";
+    return;
+  }
+
+  if (!emailRegex.test(email.value)) {
+    error.value = "Please enter a valid email address.";
     return;
   }
 
